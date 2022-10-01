@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 6.25%;
+  --ff-body: 'Roboto', sans-serif;
+  --bg-body: #00000f;
+
+  --bg-primary: #065e7c;
+  --bg-secondary: #092d38;
+  --bg-tertiary: #06181c;
+  --bg-quaternary: #06161b80;
+
+  --fc-primary: #ffffff;
+  --fc-secondary: #e1e1e6;
+  --fc-tertiary: #7c7c8a;
+  --fc-quaternary: #4e5455;
+
+  --fc-danger: #f75a68;
+
+  --bg-table-head: var(--bg-secondary);
+  --bg-table-row-odd: var(--bg-quaternary);
+  --bg-table-row-even: var(--bg-tertiary);
+
+  /* primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, denary. */
+}
+
+body {
+  font-size: 16rem;
+  background-color: var(--bg-body);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body,
+button,
+input,
+p,
+a {
+  font-family: var(--ff-body);
+  color: var(--fc-secondary);
+}
+
+/*
+
+  STYLES
+
+*/
+
+#app {
+  height: 100%;
+  width: min(1120rem, 88%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 115rem;
+  padding-bottom: 88rem;
+}
+
+.header__logo-svg {
+  color: var(--fc-primary);
+}
+
+.header__search-wrapper {
+  display: flex;
+  gap: 8rem;
+  justify-content: flex-end;
+  width: 64%;
+}
+
+.search__input {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 100%;
+  background-color: var(--bg-tertiary);
+  color: var(--fc-primary);
+
+  width: max(
+    100px,
+    100%
+  ); /* aqui eu não sei porque mas nem o clamp nem o max estão funcionando */
+  padding: 16rem;
+  border: none;
+  border-radius: 5rem;
+}
+
+.search__button {
+  font-weight: bold;
+  font-size: 14rem;
+  line-height: 24rem;
+  color: var(--fc-primary);
+  background-color: var(--bg-primary);
+  display: flex;
+  gap: 8rem;
+  cursor: pointer;
+
+  width: fit-content;
+  height: fit-content;
+  padding-block: 12rem;
+  padding-inline: 32rem;
+  border: none;
+  border-radius: 5rem;
+
+  transition: background 0.2s ease-in-out;
+}
+
+.search__button:hover,
+.search__button:hover svg path {
+  background-color: var(--fc-primary);
+  color: var(--bg-primary);
+  fill: var(--bg-primary);
+}
+
