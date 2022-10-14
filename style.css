@@ -88,6 +88,7 @@ header {
   display: flex;
   gap: 8rem;
   justify-content: flex-end;
+  align-items: center;
   width: 64%;
 }
 
@@ -267,6 +268,24 @@ td {
 .message p {
   color: #4e5455;
   font-family: 'Roboto Mono', monospace;
+}
+
+@media (max-width: 720px) {
+  header {
+    margin-top: 64rem;
+    padding-bottom: 44rem;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .header__search-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search__button {
+    width: 100%;
+  }
 }
 
 .hide {
