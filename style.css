@@ -6,6 +6,10 @@
 
 :root {
   font-size: 6.25%;
+  /* 
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+ */
   --ff-body: 'Roboto', sans-serif;
   --bg-body: #00000f;
 
@@ -14,6 +18,7 @@
   --bg-tertiary: #06181c;
   --bg-quaternary: #06161b80;
   --bg-quinary: #4a808c;
+  --bg-senary: #030b0d;
 
   --fc-primary: #ffffff;
   --fc-secondary: #e1e1e6;
@@ -245,4 +250,25 @@ td {
   height: 0;
   visibility: hidden;
   overflow: hidden;
+}
+
+.message-empty {
+  background-color: var(--bg-senary);
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60rem;
+  height: 300px;
+}
+
+.message p {
+  color: #4e5455;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.hide {
+  display: none;
 }
