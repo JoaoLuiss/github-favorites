@@ -66,7 +66,7 @@ a {
   justify-content: center;
   align-items: center;
 
-  width: 90%;
+  width: 80%;
   padding-inline: 16px;
   padding-bottom: 16px;
 }
@@ -134,7 +134,7 @@ header {
 }
 
 .table-wrapper {
-  overflow: hidden;
+  overflow: auto;
   border-radius: 12rem;
   border: 1px solid var(--bg-quinary);
   width: 100%;
@@ -175,12 +175,12 @@ th:last-child {
 
 tr:nth-child(odd) {
   background-color: var(--bg-quaternary);
-  border-top: 1px solid var(--bg-table-head);
+  /* border-top: 1px solid var(--bg-table-head); */
 }
 
 tr:nth-child(even) {
   background-color: var(--bg-tertiary);
-  border-top: 1px solid var(--bg-quinary);
+  /* border-top: 1px solid var(--bg-quinary); */
 }
 
 td {
